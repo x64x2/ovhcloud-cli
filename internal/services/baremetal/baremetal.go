@@ -18,14 +18,15 @@ import (
 	"github.com/ovh/ovhcloud-cli/internal/assets"
 	"github.com/ovh/ovhcloud-cli/internal/display"
 	"github.com/ovh/ovhcloud-cli/internal/editor"
-	filtersLib "github.com/ovh/ovhcloud-cli/internal/filters"
+	"github.com/ovh/ovhcloud-cli/internal/filters"
 	"github.com/ovh/ovhcloud-cli/internal/flags"
-	httpLib "github.com/ovh/ovhcloud-cli/internal/http"
+	"github.com/ovh/ovhcloud-cli/internal/http"
 	"github.com/ovh/ovhcloud-cli/internal/services/common"
 	"github.com/spf13/cobra"
 )
 
-type baremetalCustomizations struct {
+type baremetalCustomizations struct 
+{
 	ConfigDriveUserData             string            `json:"configDriveUserData,omitempty"`
 	EfiBootloaderPath               string            `json:"efiBootloaderPath,omitempty"`
 	Hostname                        string            `json:"hostname,omitempty"`
